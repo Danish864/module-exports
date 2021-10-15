@@ -4,25 +4,28 @@ A modular program is one whose components can be separated, used individually, a
 
 #This repo is about module exports in node and javascript es6 environments with event loop function.
 In Node environment in vs code we can export our function by using this expression
-                  module.exports = { functionName };
+      
+      module.exports = { functionName };
   
   we can export as many funtions as we want by specifying in curly brackets and add comma between them .
   
   
   for importing into required program we use 'require' keyword . for example
-                  const converters = require('./functions.js');
-                  converters.functionName();
+      
+      const converters = require('./functions.js');
+      converters.functionName();
                   
   we can import functions from more than one files to required file.
   
-  
+
 Now let's see javascript-es6 runtime environment in vs-code
   
  for javascript we can export our functions by this expression
          
-          export { functionName };
+      export { functionName };
  
  you can export function where it's declared by adding export in start of function, let's see example:
+      
       export function area(side) {
       return side * side; }
   
@@ -30,7 +33,14 @@ Now let's see javascript-es6 runtime environment in vs-code
   
       import { functionName1 , functionName2 } from './es6-function.js';
       functionName1(); //for invoking function
-      
+  And in vs code we need json file to run the program for that you have to type : 
+                                  
+      npm init
+  and then keep pressing enter untill a json file formed into your drive. Then go to the json file and add this line
+     
+     "type":"module",
+  you can add it before script line start for best practice.
+  
   There are many other ways available to export modules.
    
    Let's discuss now event loop example:
