@@ -64,4 +64,4 @@ The event loop facilitates this process; it constantly checks whether or not the
          setTimeout(usingsetTimeout, 3000);
                 console.log("This is the last line of code in eventloop.js.");}
 
-In this example if our seond function takes much time to load then you should start it before and when we need it . It comes on time and it saves our time.
+In this example if our second function takes much time to load then you should start it before and when we need it . It comes on time and it saves our time.
